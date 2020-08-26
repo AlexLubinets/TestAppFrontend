@@ -1,0 +1,29 @@
+@keyframes uncloseA {
+	from {
+		height: 0vh;
+		transform: scaleY(-1);
+	}
+	to {
+		transform: scaleY(1);
+	}
+}
+form {
+	margin: 0;
+	animation: showing 0.5s;
+}
+#logo {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: 1s;
+	>img {
+		border-radius: 50%;
+		animation: uncloseA 1s ease-in-out forwards;
+		height: 25vh;
+	}
+}
+button {
+	margin: 12px 0;
+}

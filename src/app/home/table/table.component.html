@@ -1,0 +1,14 @@
+<table class="col-12">
+    <tr class="trHeader">
+        <td class="nameCol">
+            <span>NAME</span>
+        </td>
+        <td class="userNameCol">
+            <span>USERNAME</span>
+        </td>
+    </tr>
+    <tr class="trUser" *ngFor="let user of users">
+        <td class="fullNameCol">{{user.fullName}}</td>
+        <td class="userNameCol">{{user.userName}}</td>
+    </tr>
+</table>
